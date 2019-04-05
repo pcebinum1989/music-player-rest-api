@@ -1,18 +1,21 @@
 package com.musicplayer.musicplayerrestapi.models;
 
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.Duration;
 
 
+@Entity
 public class Song{
 
 
+	@Id
+	@GeneratedValue
 	private Integer id;
-
 	private String title;
 	private String artist;
-
-
 	private Duration length;
 
 	public Song() {	}

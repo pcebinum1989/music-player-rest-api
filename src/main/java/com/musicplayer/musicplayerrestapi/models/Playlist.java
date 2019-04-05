@@ -10,10 +10,7 @@ public class Playlist {
 
 
 	private Integer id;
-
 	private String name;
-
-
 	private List<Song> songlist;
 	
 	public Playlist() {
